@@ -34,7 +34,7 @@ class Header extends Component {
       <React.Fragment>
         <Navbar fixed="top" expand="md">
           <div className="container">
-            <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/old-homestead-logo.jpg" height="90" width="90" alt="Homemade on the Homestead logo" />Homemade on the Homestead</NavbarBrand>
+            <NavbarBrand href="/"><img src="assets/images/homesteadLogo.jpg" height="90" width="90" alt="HH logo" />Homemade <br />on the <br />Homestead</NavbarBrand>
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
@@ -55,7 +55,7 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/shopping">
-                    <i className="fa fa-shopping-basket fa-lg" /> Shop
+                    <i className="fa fa-shopping-basket fa-lg" />Shop
                     </NavLink>
                 </NavItem>
                 <NavItem>
