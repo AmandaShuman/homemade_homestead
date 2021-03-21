@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron,
+  Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem,
   Button, Modal, ModalHeader, ModalBody,
   Form, FormGroup, Input, Label
 } from 'reactstrap';
@@ -64,10 +64,14 @@ class Header extends Component {
                     </NavLink>
                 </NavItem>
               </Nav>
+              <Form>
+                <Input type="text" placeholder="Search..." name="search" />
+                <Button type="submit"><i className="fa fa-search" /></Button>
+              </Form>
               <span className="navbar-text ml-auto">
                 <Button outline onClick={this.toggleModal} >
                   <i className="fa fa-sign-in fa-lg" /> Login/Register
-                  </Button>
+                </Button>
               </span>
             </Collapse>
           </div>
