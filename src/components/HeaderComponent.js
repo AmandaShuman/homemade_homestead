@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron,
+  Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem,
   Button, Modal, ModalHeader, ModalBody,
   Form, FormGroup, Input, Label
 } from 'reactstrap';
@@ -34,7 +34,7 @@ class Header extends Component {
       <React.Fragment>
         <Navbar fixed="top" expand="md">
           <div className="container">
-            <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.jpg" height="90" width="90" alt="logo" />Homemade <br /> on the <br /> Homestead</NavbarBrand>
+            <NavbarBrand href="/"><img src="assets/images/homesteadLogo.jpg" height="90" width="90" alt="HH logo" />Homemade <br />on the <br />Homestead</NavbarBrand>
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
@@ -55,7 +55,7 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/shopping">
-                    <i className="fa fa-shopping-basket fa-lg" /> Shop
+                    <i className="fa fa-shopping-basket fa-lg" />Shop
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -64,10 +64,14 @@ class Header extends Component {
                     </NavLink>
                 </NavItem>
               </Nav>
+              <Form>
+                <Input type="text" placeholder="Search..." name="search" />
+                <Button type="submit"><i className="fa fa-search" /></Button>
+              </Form>
               <span className="navbar-text ml-auto">
                 <Button outline onClick={this.toggleModal} >
                   <i className="fa fa-sign-in fa-lg" /> Login/Register
-                  </Button>
+                </Button>
               </span>
             </Collapse>
           </div>

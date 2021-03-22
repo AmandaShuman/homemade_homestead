@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Form, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function Footer(props) {
@@ -10,8 +11,9 @@ function Footer(props) {
                         <h5>Links</h5>
                         <ul className="list-unstyled">
                             <li><Link to='/home'>Home</Link></li>
-                            <li><Link to='/directory'>Directory</Link></li>
                             <li><Link to='/aboutus'>About</Link></li>
+                            <li><Link to='/blogs'>Blogs</Link></li>
+                            <li><Link to='/shopping'>Shop</Link></li>
                             <li><Link to='/contactus'>Contact</Link></li>
                         </ul>
                     </div>
@@ -23,8 +25,12 @@ function Footer(props) {
                         <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube" /></a>
                     </div>
                     <div className="col-sm-4 text-center">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
+                        <a role="button" className="btn btn-link" href="tel:+12025551234"><i className="fa fa-phone" /> 1-202-555-1234</a><br />
+                        <a role="button" className="btn btn-link" href="mailto:homemadeOnTheHomestead@gmail.com"><i className="fa fa-envelope-o" /> homemadeOnTheHomestead@gmail.com</a>
+                        <Form>
+                            <Input type="text" placeholder="Search..." name="search" />
+                            <Button type="submit"><i className="fa fa-search" /></Button>
+                        </Form>
                     </div>
                 </div>
             </div>
