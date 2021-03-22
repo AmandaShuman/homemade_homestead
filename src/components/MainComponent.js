@@ -22,6 +22,7 @@ class Main extends Component {
           <Route path='/home' component={Home} />
           <Redirect to='/home' />
         </Switch>
+        <Footer />
       </div>
     );
   }
