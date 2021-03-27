@@ -3,3 +3,25 @@ body {
   overflow-x: hidden !important; 
 }
 
+.color-nav {
+  background-color: #214b05;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #C0B9B1;
+}
+
+.site-footer {
+  background-color: #0B710B;
+  color: white;
+}
+.site-footer a, .site-footer .btn {
+  color: white; 
+}
+.site-footer a:hover, .site-footer .btn:hover {
+  color: #C0B9B1; 
+}

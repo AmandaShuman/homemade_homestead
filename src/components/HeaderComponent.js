@@ -5,6 +5,7 @@ import {
   Form, FormGroup, Input, Label
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import Logo from '../images/oldHomesteadLogo.jpg';
 
 class Header extends Component {
   constructor(props) {
@@ -32,45 +33,46 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar fixed="top" expand="md">
+        <Navbar className="color-nav" fixed="top" expand="md">
           <div className="container">
-            <NavbarBrand href="/"><img src="assets/images/homesteadLogo.jpg" height="90" width="90" alt="HH logo" />Homemade <br />on the <br />Homestead</NavbarBrand>
+            <NavbarBrand href="/"><img src={Logo} height="90" width="90" alt="logo" /></NavbarBrand>
+            <h5 className="text-center mr-5">Homemade <br />on the <br />Homestead</h5>
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
-                <NavItem>
+                <NavItem className="ml-5">
                   <NavLink className="nav-link" to="/home">
                     <i className="fa fa-home fa-lg" /> Home
-                    </NavLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/aboutus">
                     <i className="fa fa-info fa-lg" /> About
-                    </NavLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/blogs">
                     <i className="fa fa-book fa-lg" /> Blogs
-                    </NavLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/shopping">
                     <i className="fa fa-shopping-basket fa-lg" />Shop
-                    </NavLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/contactus">
                     <i className="fa fa-address-card fa-lg" /> Contact Us
-                    </NavLink>
+                  </NavLink>
                 </NavItem>
               </Nav>
-              <Form>
-                <Input type="text" placeholder="Search..." name="search" />
-                <Button type="submit"><i className="fa fa-search" /></Button>
-              </Form>
               <span className="navbar-text ml-auto">
-                <Button outline onClick={this.toggleModal} >
-                  <i className="fa fa-sign-in fa-lg" /> Login/Register
+                <Form className="form-inline">
+                  <Input type="text" className="w-50" placeholder="Search..." name="search" />
+                  <Button type="submit"><i className="fa fa-search" /></Button>
+                </Form>
+                <Button outline onClick={this.toggleModal} className="text-white">
+                  <i className="fa fa-sign-in fa-lg text-white" /> Login/Register
                 </Button>
               </span>
             </Collapse>

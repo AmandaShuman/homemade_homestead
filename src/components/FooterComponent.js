@@ -27,7 +27,7 @@ function Footer(props) {
                     <div className="col-sm-4 text-center">
                         <a role="button" className="btn btn-link" href="tel:+12025551234"><i className="fa fa-phone" /> 1-202-555-1234</a><br />
                         <a role="button" className="btn btn-link" href="mailto:homemadeOnTheHomestead@gmail.com"><i className="fa fa-envelope-o" /> homemadeOnTheHomestead@gmail.com</a>
-                        <Form>
+                        <Form className="form-inline">
                             <Input type="text" placeholder="Search..." name="search" />
                             <Button type="submit"><i className="fa fa-search" /></Button>
                         </Form>
