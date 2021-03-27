@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/homemade_homestead/static/css/main.821a9966.chunk.css",
+    "main.js": "/homemade_homestead/static/js/main.05a30dcd.chunk.js",
+    "main.js.map": "/homemade_homestead/static/js/main.05a30dcd.chunk.js.map",
+    "runtime-main.js": "/homemade_homestead/static/js/runtime-main.743067be.js",
+    "runtime-main.js.map": "/homemade_homestead/static/js/runtime-main.743067be.js.map",
+    "static/css/2.f6816f61.chunk.css": "/homemade_homestead/static/css/2.f6816f61.chunk.css",
+    "static/js/2.524c66fc.chunk.js": "/homemade_homestead/static/js/2.524c66fc.chunk.js",
+    "static/js/2.524c66fc.chunk.js.map": "/homemade_homestead/static/js/2.524c66fc.chunk.js.map",
+    "static/js/3.c34e5c71.chunk.js": "/homemade_homestead/static/js/3.c34e5c71.chunk.js",
+    "static/js/3.c34e5c71.chunk.js.map": "/homemade_homestead/static/js/3.c34e5c71.chunk.js.map",
+    "index.html": "/homemade_homestead/index.html",
+    "static/css/2.f6816f61.chunk.css.map": "/homemade_homestead/static/css/2.f6816f61.chunk.css.map",
+    "static/css/main.821a9966.chunk.css.map": "/homemade_homestead/static/css/main.821a9966.chunk.css.map",
+    "static/js/2.524c66fc.chunk.js.LICENSE.txt": "/homemade_homestead/static/js/2.524c66fc.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/homemade_homestead/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/index.css": "/homemade_homestead/static/media/indie-flower-latin-400.f403a749.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.743067be.js",
+    "static/css/2.f6816f61.chunk.css",
+    "static/js/2.524c66fc.chunk.js",
+    "static/css/main.821a9966.chunk.css",
+    "static/js/main.05a30dcd.chunk.js"
+  ]
+}
